@@ -255,4 +255,10 @@ configuration found here, do the following (this is somewhat tedious):
 1. Disable IIO and UIO.
 1. Disable NXP PCA9685 PWM driver
 
+## Additional config
+
+From `mix nerves.system.shell`, configure busybox with `make busybox-menuconfig`.
+
+1. In `Networking Utilites`, select `ping`.
+
 [Image credit](#fritzing): This image is from the [Fritzing](http://fritzing.org/home/) parts library.

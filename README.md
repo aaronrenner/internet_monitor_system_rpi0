@@ -257,7 +257,14 @@ configuration found here, do the following (this is somewhat tedious):
 
 ## Additional config
 
-From `mix nerves.system.shell`, configure busybox with `make busybox-menuconfig`.
+From `mix nerves.system.shell`,
+
+Configure base OS packages with `make menuconfig`.
+
+1. `Target Packages`: Select `Show packages that are also provided by busybox`
+1. `Target Packages->Shell and utilities`: Enable `bash`
+
+Configure busybox with `make busybox-menuconfig`.
 
 1. In `Networking Utilites`, select `ping`.
 
